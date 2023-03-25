@@ -10,7 +10,7 @@ export function App() {
   const onSend = () => {
     axios
       .post<unknown, AxiosResponse<{ sum: number }>>(
-        "http://127.0.0.1:8080/data/",
+        "http://194.67.103.130:8080/data/",
         { description: event, priority: result },
         { withCredentials: true },
       )
